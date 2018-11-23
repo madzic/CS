@@ -6,54 +6,84 @@ permalink: /index.html
 <html>
 	<head>
 		<title>TEAM RANDOMIZER</title>
-	</head>
+    </head>
+        <h1>Podela po tirovima</h1>
 		<body>
-			<div class="container">
-			<div id="date"></div>
-			<div id="display"></div>
-			<div id="content">
-				<p id="quote">"the people who are crazy enough to think they can change the world are the ones who do." <br/>- Steve Jobs</p>
-			</div>
-			</div>
-
-			<ul>
-
-			<form>
-				Igrac #1:<br>
-					<input type="text" name="Igrac1" value="Straja"><br>
-				Igrac #2:<br>
-					<input type="text" name="Igrac2" value="Djomla"><br>
-				Igrac #3:<br>
-					<input type="text" name="Igrac3" value="Chelios"><br>
-				Igrac #4:<br>
-					<input type="text" name="Igrac4" value="Mareska"><br>
-				Igrac #5:<br>
-					<input type="text" name="Igrac5" value="Ica"><br>
-				Igrac #6:<br>
-					<input type="text" name="Igrac6" value="Pex"> <br>
-					<br>
-				<input type="Reset to defaults">
-			</form>
-			
-			<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
-			<br>
-			
-			<button onclick="document.getElementById('Igrac').innerHTML = 'Igrac 1'">Bt1</button>
-			
-			<button id="gen" onclick="genQuote()">New Quote</button>
-			
-			<p id="Igrac"></p>
-			<p id="demo"></p>
-			<p id="quote"></p>
-				
-			<script>
-			function getRndInteger(min, max) {
-				return Math.floor(Math.random() * (max - min)) + min;
-			}
-			</script>
-        
-      </ul>
-
-	<script src="js/rndFun.js"></script>
-	</body>
+            <form>
+            <table >
+                <tr>
+                    <th>Par #</th>
+                    <th>Igrac 1</th>
+                    <th>Igrac 2</th> 
+                    <th>Sorted 1</th>
+                    <th>Sorted 2</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td><input type="text" id="Igrac1a" value="1a"></td>
+                    <td><input type="text" id="Igrac1b" value="1b"></td> 
+                    <td> <p id="Sorted1a"></p> </td>
+                    <td> <p id="Sorted1b"></p> </td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td><input type="text" id="Igrac2a" value="2a"></td>
+                    <td><input type="text" id="Igrac2b" value="2b"></td> 
+                    <td> <p id="Sorted2a"></p> </td>
+                    <td> <p id="Sorted2b"></p> </td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td><input type="text" id="Igrac3a" value="3a"></td>
+                    <td><input type="text" id="Igrac3b" value="3b"></td> 
+                    <td> <p id="Sorted3a"></p> </td>
+                    <td> <p id="Sorted3b"></p> </td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td><input type="text" id="Igrac4a" value="4a"></td>
+                    <td><input type="text" id="Igrac4b" value="4b"></td> 
+                    <td> <p id="Sorted4a"></p> </td>
+                    <td> <p id="Sorted4b"></p> </td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td><input type="text" id="Igrac5a" value="5a"></td>
+                    <td><input type="text" id="Igrac5b" value="5b"></td> 
+                    <td> <p id="Sorted5a"></p> </td>
+                    <td> <p id="Sorted5b"></p> </td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td><input type="text" id="Igrac6a" value="6a"></td>
+                    <td><input type="text" id="Igrac6b" value="6b"></td> 
+                    <td> <p id="Sorted6a"></p> </td>
+                    <td> <p id="Sorted6b"></p> </td>
+                </tr>
+    
+              </table>
+            </form>
+        <br>
+        <br>
+        <!-- <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Just random number</button>
+        <br>
+        <br>
+        <p id="demo"></p> -->
+		<script>
+            function getRndInteger(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+        </script>
+        <button id="gen" onclick="genQuote()">Generisi novu podelu</button>
+        <script src="js/fnt.js"></script>
+    
+        <!-- <button id="gen" onclick="myFunction()">In HTML aaa</button>
+        <script>
+                function myFunction() {
+                    document.getElementById('Sorted1a').innerHTML = 'aaa';
+                }
+        </script> -->
+    
+    
+    </body>
 </html>
