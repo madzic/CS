@@ -15,13 +15,35 @@ permalink: /index.html
 				<p id="quote">"the people who are crazy enough to think they can change the world are the ones who do." <br/>- Steve Jobs</p>
 			</div>
 			</div>
-			<div id="b-nav">
+
 			<ul>
 
+			<form>
+				Igrac #1:<br>
+					<input type="text" name="Igrac1" value="Straja"><br>
+				Igrac #2:<br>
+					<input type="text" name="Igrac2" value="Djomla"><br>
+				Igrac #3:<br>
+					<input type="text" name="Igrac3" value="Chelios"><br>
+				Igrac #4:<br>
+					<input type="text" name="Igrac4" value="Mareska"><br>
+				Igrac #5:<br>
+					<input type="text" name="Igrac5" value="Ica"><br>
+				Igrac #6:<br>
+					<input type="text" name="Igrac6" value="Pex"> <br>
+					<br>
+				<input type="Reset to defaults">
+			</form>
+			
 			<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
-
+			<br>
+			
+			<button onclick="document.getElementById('Igrac').innerHTML = 'Igrac 1'">Bt1</button>
+			
+			<p id="Igrac"></p>
+			
 			<p id="demo"></p>
-
+			
 			<script>
 			function getRndInteger(min, max) {
 				return Math.floor(Math.random() * (max - min)) + min;
@@ -29,7 +51,7 @@ permalink: /index.html
 			</script>
         
       </ul>
-    </div>
+
 
 	</body>
 </html>
