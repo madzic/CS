@@ -5,30 +5,43 @@ permalink: /index.html
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TEAM RANDOMIZER</title>
-		<style>
-        		table {
-    				border-collapse: collapse;
-			}
-		
-			table, th, td {
-                		border: 0.5px solid black;
-			}
-        	</style>
-	</head>
-        <h1>Random team pairings</h1>
-
-	<body>
-            <form>
-            <table >
+		<title>Team randomizer</title>
+            <style>
+                table {
+                   border-collapse: collapse;
+                }
+                table, th, td {
+                    border: 0.1px solid black;
+                } 
+            
+                h1 { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 32px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; text-decoration: underline } 
+                h3 { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+                p { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+                blockquote { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } 
+                pre { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+                th { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 16px; font-weight: bold; line-height: 20px; } 
                 
-		<col width="50">
+
+                td { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px;  text-align: center; vertical-align: middle; } 
+                
+                input[type=text] { border: 1px dotted #999; border-radius: 0; -webkit-appearance: none;   text-align: center; vertical-align: middle; }
+                button, input, select, textarea { font-family : inherit; font-size: 16px; }
+                
+                table.center { margin-left:auto; margin-right:auto; }
+                body {text-align:center;}
+            </style>
+    </head>
+        <h1>Random team pairings</h1>
+            
+        <body>
+            <form>
+            <table class="center">
+                <col width="50">
                 <col width="130">
                 <col width="130">
                 <col width="160">
                 <col width="160">
-		    
-		<tr style="line-height: 8px; height: 30px;">
+                <tr style="line-height: 8px; height: 30px; font-weight:bold">
                     <th>Tier #</th>
                     <th>Player 1</th>
                     <th>Player 2</th> 
@@ -44,29 +57,29 @@ permalink: /index.html
                 </tr>
                 <tr style="line-height: 8px; height: 30px;">
                     <th>2</th>
-                    <td><input type="text" id="Igrac2a" value="2a"></td>
-                    <td><input type="text" id="Igrac2b" value="2b"></td> 
+                    <td><input type="text" id="Igrac2a" value="Gi"></td>
+                    <td><input type="text" id="Igrac2b" value="Mareska"></td> 
                     <td> <p id="Sorted2a"></p> </td>
                     <td> <p id="Sorted2b"></p> </td>
                 </tr>
                 <tr style="line-height: 8px; height: 30px;">
                     <th>3</th>
-                    <td><input type="text" id="Igrac3a" value="3a"></td>
-                    <td><input type="text" id="Igrac3b" value="3b"></td> 
+                    <td><input type="text" id="Igrac3a" value="Drvoseca"></td>
+                    <td><input type="text" id="Igrac3b" value="Cica"></td> 
                     <td> <p id="Sorted3a"></p> </td>
                     <td> <p id="Sorted3b"></p> </td>
                 </tr>
                 <tr style="line-height: 8px; height: 30px;">
                     <th>4</th>
-                    <td><input type="text" id="Igrac4a" value="4a"></td>
-                    <td><input type="text" id="Igrac4b" value="4b"></td> 
+                    <td><input type="text" id="Igrac4a" value="Anibel"></td>
+                    <td><input type="text" id="Igrac4b" value="Comi"></td> 
                     <td> <p id="Sorted4a"></p> </td>
                     <td> <p id="Sorted4b"></p> </td>
                 </tr>
                 <tr style="line-height: 8px; height: 30px;">
                     <th>5</th>
-                    <td><input type="text" id="Igrac5a" value="5a"></td>
-                    <td><input type="text" id="Igrac5b" value="5b"></td> 
+                    <td><input type="text" id="Igrac5a" value="Voodoo"></td>
+                    <td><input type="text" id="Igrac5b" value="Eleven"></td> 
                     <td> <p id="Sorted5a"></p> </td>
                     <td> <p id="Sorted5b"></p> </td>
                 </tr>
@@ -92,8 +105,11 @@ permalink: /index.html
             }
         </script>
         <button style="height:50px;width:200px" id="gen" onclick="genQuote()">Generisi novu podelu</button>
-        <script src="js/rndFun.js"></script>
+        <script src="js/rndFun.js"></script> <!-- PROMENITI OVU LINIJU ZA RAZLIKU KOMP/GIT [rndFun]  -->
     
+
+        <p align="left"> <font size=2> © by E11even, 2018 </font> </p>
+
         <!-- <button id="gen" onclick="myFunction()">In HTML aaa</button>
         <script>
                 function myFunction() {
